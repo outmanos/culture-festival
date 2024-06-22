@@ -61,9 +61,49 @@ Before you begin, make sure you have the following installed:
 
     This command stops and removes the containers, networks, and volumes defined in the docker-compose.yml file.
 
-    3.2. **Additional Tips**:
+    3.2. **Add the server to pgAdmin** *(this step should be automated soon)*:
 
-    <u>Viewing Logs</u>:
+    To add the Postgres server to pgAdmin, follow these steps:
+
+    3.2.1. **Get the IP Address of the PostgreSQL Container**:
+
+    Get the IP address of the running Postgres service by running:
+
+    ```sh
+    docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' postgres_container
+    ```
+    
+    3.2.2. **Open pgAdmin**:
+
+    Launch pgAdmin and log in with the credentials in the docker-compose.yml file.
+
+    3.2.3. **Register a New Server**:
+
+    In pgAdmin, right-click on *"Servers"* in the left-hand tree and select *"Create"* > *"Server..."*.
+
+    In the *"Create - Server"* dialog, go to the *"General"* tab and enter a name for your server (e.g., CFMS).
+
+    3.2.3. **Configure Connection Settings**:
+
+    - Navigate to the *"Connection"* tab.
+    - In the *"Host name/address"* field, enter the IP address you retrieved in step 1.
+    - Keep the default PostgreSQL port 5432 in the *"Port"* field.
+    - Enter the *"Username"* and *"Password"* as configured in your docker-compose.yml file.
+    - Click "Save" to register the new server.
+
+    You should now see the newly added server in pgAdmin, and you can expand it to view the database cfms_db.
+
+    3.3. **Additional Tips**:
+
+    <u>List containers</u>:
+
+    To view a list of the Docker containers on your machine, use the following command:
+
+    ```sh
+    docker ps
+    ```
+
+    <u>Viewing logs</u>:
 
     To view the logs of a specific service, use the following command:
 
@@ -72,19 +112,19 @@ Before you begin, make sure you have the following installed:
     Replace <service-name> with the name of the service as defined in the docker-compose.yml file.
     ```
 
-    <u>Accessing a Running Container</u>:
+    <u>Accessing a running container</u>:
 
     To access a shell inside a running container, use the following command:
 
     ```sh
     docker-compose exec <service-name> /bin/sh
     ```
-
-    Replace \<service-name> with the name of the service you want to access.
+    Replace *\<service-name>* with the name of the service you want to access.
 
 4. **Setup the backend**:
    
    WIP
+
 5. **Setup the frontend**:
 
    WIP
