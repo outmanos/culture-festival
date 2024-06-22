@@ -16,17 +16,18 @@ Before you begin, make sure you have the following installed:
 
 - [Docker](https://www.docker.com/get-started): You need Docker to build and run containers.
 - [Docker Compose](https://docs.docker.com/compose/install/): Docker Compose is required to manage multi-container Docker applications.
-- [Go](https://go.dev/doc/install): the backend/API part is build in Golang.
+- [Go](https://go.dev/doc/install): The backend/API part is build in Golang.
+- [Node.js](https://nodejs.org): The frontend requires Node.js/NPM/NPX.
 
 ### Setting Up the Environment
 
 1. **Clone the Repository**:
    
-   Clone this repository to your local machine using the following command:
+    Clone this repository to your local machine using the following command:
 
-   ```ssh
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
+    ```ssh
+    git clone https://github.com/outmanos/culture-festival.git
+    ```
 
 2. **Navigate to the Project Directory**:
 
@@ -77,7 +78,7 @@ Before you begin, make sure you have the following installed:
     ```sh
     docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' postgres_container
     ```
-    
+
     3.2.2. **Open pgAdmin**:
 
     Launch pgAdmin and log in with the credentials in the docker-compose.yml file.
@@ -132,4 +133,37 @@ Before you begin, make sure you have the following installed:
 
 5. **Setup the frontend**:
 
-   WIP
+    5.1. **Note for posterity** *(no need to run)*:
+
+    The frontend project was created using Next.js, using the following command:
+
+    ```sh
+    npx create-next-app@latest cfms-ui --typescript --use-npm
+    ```
+
+    Here are the detailed init options:
+
+    ![alt text](resources/img/nextjs-options.png)
+
+    Afterwards, I manually added SASS, by navigating to */cfms-ui* and running the following command:
+    
+    ```sh
+    npm install --save-dev sass
+    ```
+
+    5.1. **Navigate into cfms-ui**:
+
+    To run the frontend project locally, first navigate into its directory using:
+
+    ```sh
+    cd cfms-ui
+    ```
+
+    5.1. **Start the Development Server**:
+
+    Then launch this command to run it:
+
+    ```sh
+    npm run dev
+    ```
+    You can now access cfms-ui by opening http://localhost:3000 in your browser.
