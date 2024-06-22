@@ -138,7 +138,17 @@ Before you begin, make sure you have the following installed:
     The frontend project was created using Next.js, using the following command:
 
     ```sh
-    npx create-next-app@latest cfms-ui
+    npx create-next-app@latest cfms-ui --typescript --use-npm
+    ```
+
+    Here are the detailed init options:
+
+    ![alt text](resources/img/nextjs-options.png)
+
+    Afterwards, I manually added SASS, by navigating to */cfms-ui* and running the following command:
+    
+    ```sh
+    npm install --save-dev sass
     ```
 
     5.1. **Navigate into cfms-ui**:
