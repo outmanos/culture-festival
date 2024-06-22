@@ -6,7 +6,7 @@ const nextConfig = {
     // Resolve the directory path based on whether it's server or client-side
     const directoryPath = isServer ? process.cwd() : path.resolve('./');
 
-    config.resolve.alias['@'] = path.resolve(directoryPath, 'src');
+    config.resolve.alias['@'] = path.resolve(directoryPath, 'app');
     return config;
   },
   // Add any other Next.js configuration options here if needed
