@@ -1,4 +1,4 @@
-import Address from "./Address";
+import Address from "./address";
 
 class Venue {
     id: number;

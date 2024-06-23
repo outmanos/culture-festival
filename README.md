@@ -141,23 +141,13 @@ Before you begin, make sure you have the following installed:
 
     5.1. **Note for posterity** *(no need to run)*:
 
-    The frontend project was created using Next.js, using the following command:
+    The frontend project was created using Next.js + NextUI, using the following command:
 
     ```sh
-    npx create-next-app@latest cfms-ui --typescript --use-npm
+    npm install -g nextui-cli
     ```
 
-    Here are the detailed init options:
-
-    ![alt text](resources/img/nextjs-options.png)
-
-    Afterwards, I manually added SASS, by navigating to */cfms-ui* and running the following command:
-    
-    ```sh
-    npm install --save-dev sass
-    ```
-
-    5.1. **Navigate into cfms-ui**:
+    5.2. **Navigate into cfms-ui**:
 
     To run the frontend project locally, first navigate into its directory using:
 
@@ -165,7 +155,7 @@ Before you begin, make sure you have the following installed:
     cd cfms-ui
     ```
 
-    5.1. **Start the Development Server**:
+    5.3. **Start the Development Server**:
 
     Then launch this command to run it:
 

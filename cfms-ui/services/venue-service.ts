@@ -1,6 +1,6 @@
 import axios from 'axios';
-import Venue from '@/models/Venue';
-import Address from '@/models/Address';
+import Venue from '@/models/venue';
+import Address from '@/models/address';
 
 const apiUrl = 'http://go-api-will-go-here';
 
