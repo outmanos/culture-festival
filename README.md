@@ -9,7 +9,7 @@ Culture Festival Management System (CFMS)
 
 Used to manage venues, artists/bands, tickets and customer info.
 
-An étude on Go and ReactJS. Exploring both technologies through a CRUD application.
+An étude on **Go** and **ReactJS**/**Next.js**/**NextUI**. Exploring these technologies through a CRUD application.
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ Before you begin, make sure you have the following installed:
 
 3. **Navigate to the Docker Directory**:
 
-    The docker-compose file is used to setup a Postgres server and a database called **cfms_db** and a pgAdmin instance to easily manage said database.
+    The docker-compose.yml file is used to setup a Postgres server and a database called **cfms_db** and a pgAdmin instance to easily manage said database.
 
     The docker-compose.yml file is located under the */docker* directory. Move to that directory:
 

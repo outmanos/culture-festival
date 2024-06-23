@@ -24,6 +24,7 @@ const VenueForm: React.FC<VenueFormProps> = ({ onAddVenue }) => {
       new Address(0, street, city, state, zip),
       Number(capacity),
     );
+    
     onAddVenue(newVenue);
     // Clear form fields after submission
     setName("");
