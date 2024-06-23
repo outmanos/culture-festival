@@ -1,8 +1,14 @@
 # culture-festival
 
+<div style="text-align: center;">
+
+<img src="resources/img/cfms.png" alt="Icon" width="64" height="64">
+
 **Culture Festival Management System (CFMS)**:
 
-Used to manage venues, artists/bands, tickets and customer info.ç
+</div>
+
+Used to manage venues, artists/bands, tickets and customer info.
 
 An étude on Go and ReactJS. Exploring both technologies through a CRUD application.
 
