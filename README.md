@@ -3,9 +3,9 @@
 <p align="center">
 <img src="resources/img/cfms.png" alt="Icon" width="64" height="64">
 </p>
-<h1 align="center">
-**Culture Festival Management System (CFMS)**
-</h1>
+<h2 align="center">
+Culture Festival Management System (CFMS)
+</h2>
 
 Used to manage venues, artists/bands, tickets and customer info.
 
