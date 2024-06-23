@@ -1,12 +1,12 @@
 # culture-festival
 
-<div style="text-align: center;">
+<p align="center">
 
 <img src="resources/img/cfms.png" alt="Icon" width="64" height="64">
 
 **Culture Festival Management System (CFMS)**:
 
-</div>
+</p>
 
 Used to manage venues, artists/bands, tickets and customer info.
 
