@@ -6,7 +6,7 @@ interface VenueFormProps {
   onAddVenue: (venue: Venue) => void;
 }
 
-// Deal with total capacity and number of halls later
+// TODO: Deal with total capacity and number of halls later
 
 const VenueForm: React.FC<VenueFormProps> = ({ onAddVenue }) => {
   const [name, setName] = useState("");
