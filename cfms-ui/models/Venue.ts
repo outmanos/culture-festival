@@ -1,4 +1,4 @@
-import Address from "./address";
+import Address from "@/models/address";
 
 class Venue {
     id: number;
