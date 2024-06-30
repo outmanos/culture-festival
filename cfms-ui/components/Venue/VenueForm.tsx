@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Venue from '@/models/Venue';
-import Address from '@/models/Address';
+import Venue from '@/models/venue';
+import Address from '@/models/address';
 
 interface VenueFormProps {
   onAddVenue: (venue: Venue) => void;

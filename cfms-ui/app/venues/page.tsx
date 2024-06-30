@@ -1,10 +1,11 @@
 'use client'
 
+import { title } from "@/components/primitives";
 import React, { useState, useEffect } from 'react';
-import Venue from '@/models/Venue';
-import VenueList from '@/components/Venue/VenueList';
-import VenueForm from '@/components/Venue/VenueForm';
-import { fetchVenues, addVenue, editVenue, deleteVenue } from '@/services/VenueService';
+import Venue from '@/models/venue';
+import VenueList from '@/components/venue/venue-list';
+import VenueAdd from '@/components/venue/venue-add';
+import { fetchVenues, addVenue, editVenue, deleteVenue } from '@/services/venue-service';
 
 const VenuesPage: React.FC = () => {
   const [venues, setVenues] = useState<Venue[]>([]);
@@ -53,8 +54,8 @@ const VenuesPage: React.FC = () => {
 
   return (
     <div>
-      <h1>Venues Page</h1>
-      <VenueForm onAddVenue={handleAddVenue} />
+      <h1 className={title()}>Venues</h1>
+      <VenueAdd /*onAddVenue={handleAddVenue}*/ />
       <VenueList venues={venues} onEditVenue={handleEditVenue} onDeleteVenue={handleDeleteVenue} />
     </div>
   );
